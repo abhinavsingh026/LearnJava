@@ -6,7 +6,7 @@ class Test{
         System.out.println(a+b);
     }
 }
-class Drivermain{
+class Nallamain{
     public static void main(String[]args){
         Test obj = new Test();
         obj.add(11,11);
