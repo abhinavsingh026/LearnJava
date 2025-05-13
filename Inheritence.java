@@ -1,27 +1,27 @@
 import java.util.Scanner;
-class A{
+class A {
     int x,y;
     public int add(int x,int y){
         return(x+y);
     }
 }
-class B extends A{
+class B extends A {
     public int sub(int x,int y){
     return(x-y);
     }
 }
-class C extends B{
+class C extends B {
     public int mul(int x,int y){
     return(x*y);
     }
 }
-class D extends C{
+class D extends C {
     public int div(int x,int y){
     return(x%y);
     }
 }
-class Inheritence{
-    public static void main(String[]args){
+class Inheritence {
+    public static void main(String[]args) {
         int x,y;
         Scanner sc = new Scanner(System.in);
         D obj = new D();
