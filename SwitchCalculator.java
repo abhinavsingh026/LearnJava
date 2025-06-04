@@ -2,7 +2,7 @@ import java.util.*;
 import java.lang.*;
 public class SwitchCalculator {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in); 
+        Scanner scanner = new Scanner(System.in);
 
         // Input first number
         System.out.print("Enter first number: ");
