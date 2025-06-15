@@ -13,6 +13,5 @@ class SquareRoot {
         r2 = -(b-d)/2*a;
         r1 = -(b+Math.sqrt(b*b-4*a*c))/2*a;
         System.out.print("Roots of the Equation is:"+r1+" and "+r2);
-
     }
 }
