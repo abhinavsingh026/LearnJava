@@ -7,7 +7,8 @@ class Decimal_Number {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter No. in Binary: ");
         sc.useRadix(2);
-        // The no. given in radix is the base of that number system and it will auto convert into integer since there is nextInt(); Ex-1010 output - 10(in decimal system)
+        // The no. given in radix is the base of that number system and it will auto convert into integer 
+        // since there is nextInt(); Ex-1010 output - 10(in decimal system)
         int binary_number = sc.nextInt();
         System.out.println("Decimal No. is: "+binary_number);
     }
