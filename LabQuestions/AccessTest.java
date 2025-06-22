@@ -1,4 +1,4 @@
-class sample {
+class Sample {
     public int x = 5;
     private int y = 10;
     final int z = 20;
@@ -15,13 +15,13 @@ class sample {
 }
 public class AccessTest {
     public static void main(String[]args) {
-        Sample s = new Sample();
-        System.out.println("Public X: "+s.x);
-        s.printY();
+        Sample s1 = new Sample();
+        System.out.println("Public X: "+s1.x);
+        s1.PrintY();
         int a = 50;
-        s.modifyPrimitive(a);
-        System.out.print("After modifyPrimitive "+a);
-        s.modifyObject(s);
-        System.out.print("After modifyObject, X: "+s.x);
+        s1.modifyPrimitive(a);
+        System.out.println("After modifyPrimitive "+a);
+        s1.modifyObject(s1);
+        System.out.println("After modifyObject, X: "+s1.x);
     }
 }
