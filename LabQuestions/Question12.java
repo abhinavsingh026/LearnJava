@@ -13,8 +13,8 @@ class Sample {
         System.out.println("Inside modifyPrimitive: "+a);        
     }
 }
-public class AccessTest {
-    public static void main(String[]args) {
+public class Question12 {
+    public static void main(String[] args) {
         Sample s1 = new Sample();
         System.out.println("Public X: "+s1.x);
         s1.PrintY();

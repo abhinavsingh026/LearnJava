@@ -5,7 +5,7 @@ class OverloadTest {
     void test(double y) {
         System.out.println("double: "+y);
     }
-    public static void main(String[]args) {
+    public static void main(String[] args) {
         OverloadTest obj = new OverloadTest();
         obj.test(10);
         obj.test(10.5);
