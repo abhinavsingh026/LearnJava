@@ -1,9 +1,9 @@
 import java.awt.*;
 import java.awt.event.*;
 class First extends Frame implements ActionListener 
-{	
+{
 	TextField t1,t2,t3;
-	Button b1,b2,b3,b4;
+	Button b1,b2,b3,b4; 
 	First()
 	{
 		b1 = new Button("+");
