@@ -4,9 +4,9 @@ class StringObj {
         byte b[] = {65,66,67,68,};
         String str1 = new String(c);
         String str2 = new String(b);
-        String str3 = new String("Java Program"); // 2-Objects created. 1 in String constant pool & 1 in Heap area.
-        String str4 = "Java Program";
-        String str5 = "Java Program";
+        String str3 = new String("Java Program"); //2-Objects created. 1 in String constant pool & 1 in Heap area.
+        String str4 = "Java Program"; // 1-Object created in String constant pool
+        String str5 = "Java Program"; // 1-Object created in String constant pool
         String str6 = new String(c,1,3); //Output: "ell"/1-Starting Index/3-No. of place printed
         String str7 = new String(b,1,2); //Output: "BC"/1-Starting Index/2 -No. of place printed
         System.out.println(str1);
@@ -17,6 +17,6 @@ class StringObj {
         if(str4==str5)
             System.out.println("Both Pool Objects Equal.");
         if(str3!=str4)
-            System.out.println("Heap & Pool Objects Not Equal.");
+            System.out.println("Heap & Pool Objects Not Equal."); //Literal same but Address different.
     }
 }
