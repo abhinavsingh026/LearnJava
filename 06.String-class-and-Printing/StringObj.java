@@ -14,9 +14,7 @@ class StringObj {
         System.out.println(str3);
         System.out.println(str6);
         System.out.println(str7);
-        if(str4==str5)
-            System.out.println("Both Pool Objects Equal.");
-        if(str3!=str4)
-            System.out.println("Heap & Pool Objects Not Equal."); //Literal same but Address different.
+        System.out.println(str4==str5); // Both pool Objects Equal
+        System.out.println(str3==str5); // Literal same but Address different.
     }
 }
