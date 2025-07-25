@@ -18,7 +18,7 @@ class StringMethods {
         System.out.println(str4);
         str3 = str3.trim();
         System.out.println(str3);
-        //String string.substring(int begin); - 
+        //String string.substring(int begin);
         String str5 = str3.substring(3);
         System.out.println(str5);
         str3 = str3.substring(3);
