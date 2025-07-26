@@ -1,6 +1,3 @@
-import java.lang.*;
-import javax.swing.*;
-import java.awt.*;
 import java.util.*;
 class DataTypeDetails {
     public static void main(String[]args) {
