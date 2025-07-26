@@ -11,7 +11,7 @@ public class StudChallenge {
         sc.nextLine(); // Clearing newline character from the buffer
         System.out.print("Enter HexaDecimal No: ");
         String str2 = sc.nextLine();
-        if(str2.matches("[a-f0-9]+"))
+        if(str2.matches("[A-Fa-f0-9]+"))
             System.out.println("Valid HexaDecimal NO. "+str2);
         else
             System.out.println("Invalid HexaDecimal NO. "+str2);
