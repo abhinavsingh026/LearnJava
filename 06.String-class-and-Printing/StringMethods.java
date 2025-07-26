@@ -44,7 +44,7 @@ class StringMethods {
         //Boolean string.startsWith(string s); & Boolean string.endsWith(string s);
         String str10 = new String("www.abcd.org");
         System.out.println(str10.startsWith("www.")); // Case Sensitive
-        System.out.println(str10.startsWith("bc",3)); // Case Sensitive
+        System.out.println(str10.startsWith("bc",3)); // b is on 6 so ("bc",6) will be true
         System.out.println(str10.endsWith(".org")); // Case Sensitive
         System.out.println();
         //Char string.charAt(int index);
