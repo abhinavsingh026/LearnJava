@@ -53,14 +53,14 @@ class StringMethods {
         //Int string.indexOf(string s);
         System.out.println(str10.indexOf(".")); // searches of string in whole index(left to right)
         System.out.println(str10.indexOf('c')); // if 'c' not found returns -1
-        System.out.println(str10.indexOf(".",4)); // searches for string after 4 index
+        System.out.println(str10.indexOf(".",4)); // searches for string AFTER 4 index
         System.out.println(str10.indexOf('?')); // returns -1
         System.out.println();
         //Int string.lastIndexOf(string s);
-        System.out.println(str10.indexOf(".")); // searches of string in whole index(right to left)
-        System.out.println(str10.indexOf("bc")); // if "bc" not found returns -1
-        System.out.println(str10.indexOf(".",2)); // searches for string AFTER 2 index
-        System.out.println(str10.indexOf("/")); // returns -1
+        System.out.println(str10.lastIndexOf(".")); // searches of string in whole index(right to left)
+        System.out.println(str10.lastIndexOf("bc")); // if "bc" not found returns -1
+        System.out.println(str10.lastIndexOf(".",9)); // searches for string BEFORE 9 index
+        System.out.println(str10.lastIndexOf("/")); // returns -1
         System.out.println();
         //Boolean string.equals(string s);
         //Boolean string.equalsIgnoreCase(string s);
