@@ -1,4 +1,4 @@
-public class RegularExpressions {
+public class EmailCheck {
     public static void main(String []args) {
         String str = new String("Programmer@gmail.com");
         String str2 = new String("Programmer026@hotmail.com");
