@@ -42,8 +42,8 @@ class Hex_Number {
     void CalculateHex() {
     Scanner sc = new Scanner(System.in);
     System.out.print("Enter No. is HexaDecimal: ");
-        sc.useRadix(16);
-        int hex_number = sc.nextInt();
-        System.out.println("Hex No. is(In Decimal): "+hex_number);
+    sc.useRadix(16);
+    int hex_number = sc.nextInt();
+    System.out.println("Hex No. is(In Decimal): "+hex_number);
     }
 }
