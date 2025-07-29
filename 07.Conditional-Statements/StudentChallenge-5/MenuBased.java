@@ -2,13 +2,7 @@ import java.util.Scanner;
 public class MenuBased {
     public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Menu");
-        System.out.println("===");
-        System.out.println("ADD");
-        System.out.println("SUB");
-        System.out.println("MUL");
-        System.out.println("DIV");
-        System.out.println("Enter 2 Numbers: ");
+        System.out.println("Menu\n===\nADD\nSUB\nMUL\nDIV\nEnter Two Numbers: ");
         int n1 = sc.nextInt();
         int n2 = sc.nextInt();
         sc.nextLine();
