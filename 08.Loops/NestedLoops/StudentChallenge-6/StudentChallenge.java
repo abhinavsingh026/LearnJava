@@ -6,8 +6,6 @@ public class StudentChallenge {
         obj1.twopattern();
         PatternThree obj2 = new PatternThree();
         obj2.threepattern();
-        PatternStarOne obj3 = new PatternStarOne();
-        obj3.onestarpattern();
     }
 }
 class PatternOne {
@@ -39,17 +37,6 @@ class PatternThree {
         for(int i=1;i<=5;i++) {
             for(int j=1;j<=6-i;j++) {
                 System.out.print(j+" "); //("* ") // (i+" ") //count=0 & count++;
-            }
-            System.out.println();
-        }
-        System.out.println();
-    }
-}
-class PatternStarOne {
-    void onestarpattern() {
-        for(int i=1;i<=5;i++) {
-            for(int j=1;j<=i;j++) {
-                System.out.print("* ");
             }
             System.out.println();
         }
