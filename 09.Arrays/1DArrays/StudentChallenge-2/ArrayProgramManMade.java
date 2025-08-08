@@ -49,32 +49,34 @@ class ArrayRotation {
 class ElementInsert {
     void insertelement() {
         Scanner sc = new Scanner(System.in);
-        int arr[];
-        arr = new int[10];
-        // arr[0] = 5;
-        // arr[1] = 9;
-        // arr[2] = 6;
-        // arr[3] = 10;     // Uninitialized spaces contain by default 0
-        // arr[4] = 12;
-        // arr[5] = 7;
-        // arr[6] = 16;
+        int A[];
+        A = new int[10];
+        // A[0] = 5;
+        // A[1] = 9;
+        // A[2] = 6;
+        // A[3] = 10;     // Uninitialized spaces contain by default 0
+        // A[4] = 12;
+        // A[5] = 7;
+        // A[6] = 16;
         for(int i=0;i<5;i++) {
             System.out.print("Enter "+i+" Element of Array: ");
-            arr[i] = sc.nextInt();
+            A[i] = sc.nextInt();
         }
-        for(int x:arr)
+        for(int x:A)
             System.out.print(x+" ");
         System.out.println();
         System.out.print("At what Index you want to insert Element: ");
         int index = sc.nextInt();
         System.out.print("Enter Element you want to insert: ");
         int element = sc.nextInt();
-        for(int j=0;j<arr.length-index;j++) {
-            arr[arr.length-1-j] = arr[arr.length-2-j];
+        for(int j=0;j<A.length-index;j++) {
+            A[A.length-1-j] = A[A.length-2-j];
         }
-        arr[index] = element;
-        for(int x:arr)
+        A[index] = element;
+        for(int x:A)
             System.out.print(x+" ");
+        
+        System.out.println();
     }
 }
 class ElementDelete {
