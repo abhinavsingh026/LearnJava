@@ -1,14 +1,14 @@
 import java.util.Scanner;
 public class ArrayProgramNatural {
     public static void main(String []args) {
-        // ArrayRotation obj = new ArrayRotation();
-        // System.out.println("Program for Left Rotation of Array:-");
-        // obj.leftrotation();
-        // System.out.println("Program for Right Rotation of Array:-");
-        // obj.rightrotation();
-        // System.out.println("Program for Inserting an Element:-");
-        // ElementInsert obj1 = new ElementInsert();
-        // obj1.insertelement();
+        ArrayRotation obj = new ArrayRotation();
+        System.out.println("Program for Left Rotation of Array:-");
+        obj.leftrotation();
+        System.out.println("Program for Right Rotation of Array:-");
+        obj.rightrotation();
+        System.out.println("Program for Inserting an Element:-");
+        ElementInsert obj1 = new ElementInsert();
+        obj1.insertelement();
         System.out.println("Program for Deleting an Element:- ");
         ElementDelete obj2 = new ElementDelete();
         obj2.deletelement();
