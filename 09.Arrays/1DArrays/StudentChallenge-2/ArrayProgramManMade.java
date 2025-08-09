@@ -51,19 +51,17 @@ class ElementInsert {
         Scanner sc = new Scanner(System.in);
         int A[];
         A = new int[10];
-        // A[0] = 5;
-        // A[1] = 9;
-        // A[2] = 6;
-        // A[3] = 10;     // Uninitialized spaces contain by default 0
-        // A[4] = 12;
-        // A[5] = 7;
-        // A[6] = 16;
-        for(int i=0;i<5;i++) {
-            System.out.print("Enter "+i+" Element of Array: ");
-            A[i] = sc.nextInt();
+        A[0] = 5;
+        A[1] = 9;
+        A[2] = 6;
+        A[3] = 10;     // Uninitialized spaces contain by default 0
+        A[4] = 12;
+        A[5] = 7;
+        A[6] = 16;
+        int n = 7;
+        for(int i=0;i<n;i++) {
+            System.out.print(A[i]+" ");
         }
-        for(int x:A)
-            System.out.print(x+" ");
         System.out.println();
         System.out.print("At what Index you want to insert Element: ");
         int index = sc.nextInt();
@@ -96,8 +94,7 @@ class ElementDelete {
         for(int j=index;j<A.length-1;j++) {
             A[j] = A[j+1];
         }
-        if(A[8]==A[9])
-            A[9] = 0;
+        A[A.length-1] = 0;
         for(int x:A)
             System.out.print(x+" ");
     }
