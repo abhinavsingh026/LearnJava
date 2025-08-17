@@ -74,12 +74,12 @@ class OverloadedMethods {
         int num = sc.nextInt();
         System.out.println(reverse(num));
 
-        int X[] = {2,3,4,5,6};
+        int X[] = {4,5,6,7,8};
         System.out.println("Normal array is:- ");
         for(int x:X) 
             System.out.print(x+" ");
         System.out.println();
-        System.out.println(reverse(X));
+        System.out.println(reverse(new int[]{4,5,6,7,8}));
 
         OverloadedMethods obj = new OverloadedMethods();
         System.out.print("Enter Username: ");
