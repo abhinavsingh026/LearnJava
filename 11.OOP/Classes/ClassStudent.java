@@ -11,7 +11,10 @@ class Student {
     // public void printAge() {
     //     System.out.println("Age: "+age);
     // }
-    public String details() {
+    // public String details() {
+    //     return "Name: "+name+"\n"+"Age: "+age+"\n"+"Roll No:"+roll+"\n"+"Course: "+course+"\n";
+    // }
+        public String toString() {
         return "Name: "+name+"\n"+"Age: "+age+"\n"+"Roll No:"+roll+"\n"+"Course: "+course+"\n";
     }
     public float totalmarks() {
@@ -42,7 +45,9 @@ public class ClassStudent {
     s1.m2 = 67;
     s1.m3 = 87;
 
-    System.out.println("Details of Student:\n"+s1.details());
+    // System.out.println("Details of Student:\n"+s1.details());
+    System.out.println("Details of Student:\n"+ s1);    //directly calling whole object
+    // which will automatically call 'toString' method //
     System.out.println("Total Marks: "+s1.totalmarks()+"/300");
     System.out.println("Average Marks: "+s1.average());
     System.out.println("Grade of Student: "+s1.grades());
