@@ -8,6 +8,9 @@ class Cylinder {
     public double lidArea() {
         return 2*(Math.PI*radius*radius);               // Behaviours of cylinder//
     }
+    public double volume() {
+        return Math.PI*radius*radius*height;
+    }
 }
 class ClassCylinder {
     public static void main(String []args) {
@@ -16,5 +19,6 @@ class ClassCylinder {
     c1.radius = 2.34;
     System.out.println("Surface Area: "+c1.surfaceArea());
     System.out.println("Lid Area: "+c1.lidArea());
+    System.out.println("Volume: "+c1.volume());
     }
 }
