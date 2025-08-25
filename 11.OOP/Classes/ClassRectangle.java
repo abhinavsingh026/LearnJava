@@ -9,7 +9,7 @@ class ClassRectangle {
         return 2*(length+breadth);
     }
     public boolean isSquare() {
-        return length==breadth;     //automatically if yes true and else false//
+        return length==breadth;     //automatically if yes true else false//
     }
     public static void main(String []args) {
         ClassRectangle r1 = new ClassRectangle();
