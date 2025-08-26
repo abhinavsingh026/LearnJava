@@ -1,7 +1,8 @@
 class Rectangle {
+//properties//
     private double length;
     private double breadth;
-
+//constructors//
     public Rectangle() {        //Non-Parameterised Constructor//
         length = 1;
         breadth = 1;
@@ -13,7 +14,7 @@ class Rectangle {
     public Rectangle(double s) {    //single parameter constructor//
         setSide(s);
     }
-
+//Property methods//
     public double getLength() {
         return length;
     }
@@ -35,13 +36,14 @@ class Rectangle {
         if(s>0)length=breadth=s;
         else length=breadth=0;
     }
-
+//Instance methods or Facilitators//
     public double area() {
         return getLength()*getBreadth();
     }
     public double perimeter() {
         return 2*(getLength()+getBreadth());
     }
+//Inquiry method//
     public boolean isSquare() {
         return length==breadth;
     }
