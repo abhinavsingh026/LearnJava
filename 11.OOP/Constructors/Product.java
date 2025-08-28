@@ -36,11 +36,15 @@ class Product {
     public void setItemQuantity(int q) {
         itemquantity = q;
     }
+    public String toString() {
+        return "\nItem No: "+itemno+"\nItem Name: "+itemname+"\nItem Price: "+itemprice+"\nItem Quantity: "+itemquantity;
+    }
     
     public static void main(String []args) { 
     Product p1 = new Product("B23-54");
     Product p2 = new Product("A25-76","TeethBrush");
     Product p3 = new Product("C45-84","Pencil",9.25f,20);
+    System.out.println(p1); //calling the toString method//
     System.out.println("p1 ItemNo: "+p1.getItemNo());
     System.out.println("p1 Item Name: "+p1.getItemName());
     System.out.println();

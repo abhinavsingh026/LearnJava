@@ -36,6 +36,9 @@ class Customer {
     public void setCustomerphno(String ph) {
         customerphno = ph;
     }
+    public String toString() {
+        return "\nCustomer ID: "+customerid+"\nCustomer Name: "+customername+"\nCustomer Address: "+customeraddress+"\nCustomer Phone No: "+customerphno;
+    }
 
     public static void main(String []args) {
         Customer c1 = new Customer("AB-12");
@@ -45,6 +48,7 @@ class Customer {
         System.out.println("Customer Name: "+c1.getCustomerName());
         System.out.println();
 //Customer Address & Phone No. can be changed/set later by using setter method//
+        System.out.println(c2); // calling the toString method //
         System.out.println("Customer ID: "+c2.getCustomerId());
         System.out.println("Customer Name: "+c2.getCustomerName());
         System.out.println("Customer Address: "+c2.getCustomerAddress());
