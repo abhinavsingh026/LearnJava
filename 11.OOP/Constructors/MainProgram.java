@@ -1,3 +1,4 @@
+import java.util.Arrays;
 class Subject {
     private String subID;
     private String subName;
@@ -46,7 +47,7 @@ class Student {
     public void setDept(String dept) {this.dept = dept;}
     public int getnumOfSubs() {return numOfSubs;}
     public Subject[] getSubjects() {return sub;}
-    public void setSubjects(Subject []subs){
+    public void setSubjects(Subject... subs){
         this.sub = subs;
     }
 
@@ -84,13 +85,16 @@ public class MainProgram {
         for(var sb:subs) 
             System.out.println(sb);
         System.out.println();
-        Student stud[] = new Student[3];
+        Student stud[] = new Student[4];
         stud[0] = new Student("EE-234","Abhinav Singh","Engineering",4);
-        stud[1] = new Student("BE-321","Abhinav Kumar","Commerce",4);
-        stud[2] = new Student("GE-938","Kumar Abhinav","General",4);
-        stud[0].setSubjects(subs); // Assign all subjects - subs array to Student-0//
+        stud[1] = new Student("BE-321","Abhinav Kumar","Commerce",3);
+        stud[2] = new Student("GE-938","Kumar Abhinav","General",2);
+        stud[3] = new Student("CS-997","Singh Abhinav","Professional",4);
 
+        stud[0].setSubjects(subs); // Assign all subjects - subs array to Student-0//
+        stud[1].setSubjects(subs[0], subs[1], subs[2]); //Assign 3 subs only cz we usin varargs//
         stud[1].setDept("B-Engineering");
+        stud[2].setSubjects(Arrays.copyOfRange(subs,0,2)); //Assign 2 subs only usin slice fn//
 
         for(var st:stud) {
             System.out.println(st);
