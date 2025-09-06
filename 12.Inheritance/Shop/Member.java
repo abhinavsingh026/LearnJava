@@ -26,7 +26,7 @@ class Member extends Customer {
     public void callBack() {
         System.out.println("Calling Back Customer");
     }
-    public void PayBill() {         //Overloading method//
+    public void PayBill() {         //Overriding method//
         System.out.println("Bill Paid Member wala");
     }
 }
